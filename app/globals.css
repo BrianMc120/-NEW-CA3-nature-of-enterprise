@@ -1,0 +1,46 @@
+@import 'tailwindcss';
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+:root {
+  --font-display: 'DM Serif Display', serif;
+  --font-body: 'DM Sans', sans-serif;
+
+  --bg:        #f7f5f0;
+  --surface:   #ffffff;
+  --border:    #e8e4dc;
+  --text:      #1a1815;
+  --muted:     #7a756c;
+  --accent:    #2d6a4f;
+
+  --lec-bg:    #eef2ff;
+  --lec-text:  #3730a3;
+  --lec-bar:   #4f46e5;
+  --lab-bg:    #ecfdf5;
+  --lab-text:  #065f46;
+  --lab-bar:   #10b981;
+  --tut-bg:    #f0f9ff;
+  --tut-text:  #075985;
+  --tut-bar:   #0ea5e9;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Page fade-in */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade-up { animation: fadeUp 0.45s ease both; }
+.delay-1 { animation-delay: 0.08s; }
+.delay-2 { animation-delay: 0.16s; }
+.delay-3 { animation-delay: 0.24s; }
